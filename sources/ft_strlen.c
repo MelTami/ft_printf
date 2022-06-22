@@ -6,11 +6,11 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 19:51:55 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/04/25 19:59:06 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/06/22 04:52:03 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "/home/coder/ft_printf/includes/ft_libftprintf.h"
+#include "../includes/ft_printf.h"
 
 size_t	ft_strlen(const char *str)
 {

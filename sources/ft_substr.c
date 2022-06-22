@@ -1,27 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 22:00:20 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/04/19 19:43:28 by mvavasso         ###   ########.fr       */
+/*   Created: 2022/04/18 15:54:37 by mvavasso          #+#    #+#             */
+/*   Updated: 2022/06/22 04:52:03 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "/home/coder/ft_printf/includes/ft_libftprintf.h"
+#include "../includes/ft_printf.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*c;
+	char	*substr;
 	size_t	i;
+	size_t	tsize;
 
-	c = (char *)s;
 	i = 0;
-	while (i < n)
+	if (start >= ft_strlen(s))
+		tsize = 1;
+	else if (len >= ft_strlen(s))
+		tsize = ft_strlen(s) - start + 1;
+	else
+		tsize = len + 1;
+	substr = malloc(tsize);
+	if (!substr)
+		return (NULL);
+	while ((start < ft_strlen(s)) && (i < len))
 	{
-		c[i] = '\0';
+		substr[i] = s[start];
 		i++;
+		start++;
 	}
+	substr[i] = 0;
+	return (substr);
 }
