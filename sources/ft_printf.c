@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 21:47:25 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/06/22 04:52:03 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/06/22 23:40:14 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_printf(const char *s, ...)
 		if (s[i] == '%')
 		{
 			i++;
-			len = check_conversion(&s[i], arg);
+			len += check_conversion(&s[i], arg);
 			i++;
 			continue ;
 		}
