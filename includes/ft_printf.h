@@ -6,12 +6,12 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 22:00:28 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/06/25 01:08:48 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/06/25 01:17:28 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFTPRINTF_H
-# define FT_LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <unistd.h>
