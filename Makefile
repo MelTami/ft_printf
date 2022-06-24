@@ -6,7 +6,7 @@
 #    By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/30 21:43:43 by mvavasso          #+#    #+#              #
-#    Updated: 2022/06/22 04:45:54 by mvavasso         ###   ########.fr        #
+#    Updated: 2022/06/25 01:01:53 by mvavasso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,8 @@ SRCS			= $(addprefix $(PATH_SRCS), ft_converthex.c\
 					ft_convertptr.c\
 					ft_convertu.c\
 					ft_free.c\
-					ft_substr.c)
+					ft_substr.c\
+					ft_puthex.c)
 
 OBJS 			= $(patsubst $(PATH_SRCS)%.c, $(PATH_OBJS)%.o, $(SRCS))
 INCLUDES		= -I $(PATH_INCLUDES)
