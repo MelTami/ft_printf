@@ -23,8 +23,8 @@
 </h3>
 
 ## Badge
-<!-- ![GetNextLine score](https://github.com/MelTami) -->
-![GetNextLine achiviment](https://github.com/MelTami/ft_printf/blob/master/img/ftprintf.png)
+<!-- ![Ft_printf score](https://github.com/MelTami) -->
+![Ft_printf achiviment](https://github.com/MelTami/ft_printf/blob/master/img/ftprintf.png)
 
 ---
 
